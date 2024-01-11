@@ -31,7 +31,6 @@ model Course {
 model Category {
   id String @id @default(uuid())
   name String @unique
-  
   courses Course[]
 
   createdAt DateTime @default(now())
